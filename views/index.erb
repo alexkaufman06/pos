@@ -1,0 +1,13 @@
+<h1>POS</h1>
+
+<% if @items.any?() %>
+  <% @items.each() do |item| %>
+  <ul>
+    <li><%= item.name() %><br><%= item.price() %></li>
+  </ul>
+  <% end %>
+<% else %>
+  <p>You don't have any items!</p>
+<% end %>
+
+<a href="/manager">Manager</a>
