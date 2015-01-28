@@ -15,6 +15,13 @@ post('/items') do
   erb(:index)
 end
 
+patch('/purchases') do
+  item_ids = params.fetch("item_ids")
+  @purchase = Purchase.new()
+  @purchase.update({:item_ids => item_ids})
+  erb(:purchases)
+end
+
 get('/manager') do
   @items = Item.all()
   erb(:manager)

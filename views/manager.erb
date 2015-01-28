@@ -1,6 +1,7 @@
 <h1>Point Of Sale</h1>
 
 <% if @items.any?() %>
+<p>Items we have in stock:</p>
   <ul>
   <% @items.each() do |item| %>
     <li><span><%= item.name() %></span><span style="margin-left: 10px;">$<%= item.price() %></span></li>
