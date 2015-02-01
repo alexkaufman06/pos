@@ -5,7 +5,7 @@
   <form action="/purchases" method="post">
     <div class="form-group">
       <input type="hidden" name="_method" value="patch">
-      <input type="checkbox" name="item_ids[]" value="<%= item.id() %>" required>
+      <input type="checkbox" name="item_ids[]" value="<%= item.id() %>">
       <label class="item-name"><%= item.name() %></label>
       <label class="item-price">$<%= item.price() %></label>
     </div>
