@@ -33,5 +33,5 @@ $ rake db:test:prepare
 ### Bug Reports
 Zarro Boogs
 ### Author
-Alex Kaufman
+Alex Kaufman & Sasha Burchuk
 #### MIT License
